@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chủ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body style="justify-content: center;display: flex;">
+	<style type="text/css">
+		.icon{
+			width: 21px;
+			height: 25px;
+			position: relative;
+			background-color: #F77E03;
+
+		}
+		.icon:after{
+		    content:"";
+		    width:0px;
+		    height:0px;
+		    position:absolute;
+		    border:10px solid transparent;
+		    border-top:8px solid #F77E03;
+		    bottom:-18px;
+		}
+
+		.ribbon:after{
+			 content:"";
+		    position:absolute;
+		    z-index:-1;
+		    width:0;
+		    height:0;
+		    bottom:-6px;
+		    left:3px;
+		    border:6px solid transparent;
+		    border-bottom:6px solid #023a7f;
+		    -moz-transform:rotate(45deg);
+		    -o-transform:rotate(45deg);
+		    -webkit-transform:rotate(45deg);
+		    -ms-transform:rotate(45deg);
+		    transform:rotate(45deg);
+		}
+
+		.ribbon:before{
+			 content:"";
+		    position:absolute;
+		    z-index:-1;
+		    width:0;
+		    height:0;
+		    bottom:-6px;
+		    left:3px;
+		    border:7px solid transparent;
+		    border-bottom:7px solid #023a7f;
+		    -moz-transform:rotate(45deg);
+		    -o-transform:rotate(45deg);
+		    -webkit-transform:rotate(45deg);
+		    -ms-transform:rotate(45deg);
+		    transform:rotate(45deg);
+		}
+		.rangeSlider{
+		    display: block;
+			height: 5px;
+			width: 100%;
+			-webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+			box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+			border-radius: 10px;
+			background: white; /* For browsers that do not support gradients */
+			/* For Safari 5.1 to 6.0 */
+			background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+			/* For Opera 11.1 to 12.0 */
+			background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+			/* For Fx 3.6 to 15 */
+			background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+			/* Standard syntax */
+			background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+			margin-top: auto;
+			margin-bottom: 0;
+		}
+
+		.rangeSlider__fill{			
+			top: 0;
+			z-index: 2;
+			 display: block;
+		    height: 5px;
+		    width: 100%;
+		    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+		    -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+		    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+		    -webkit-border-radius: 10px;
+		    -moz-border-radius: 10px;
+		    -ms-border-radius: 10px;
+		    -o-border-radius: 10px;
+		    border-radius: 10px;
+			background-color: white;
+			margin-left: auto;
+   			margin-right: 0;
+		}
+	</style>
+<div class="col-xl-10" style="min-height: 100vh;">
+	<div style="height:100%;display: flex;">
+		<div class="col-xs-4" style="background-color:rgb(3,37,38);padding-left: 0px; padding-right: 0px;">
+			<div class="card" style="justify-content: center;  align-items: center;  background-color: unset; height: 200px">
+			  <img src="user.jpg" style="border-width: 4px;border-color: #065FD4;width: 148px;height: 148px; border-radius: 50%; border-style: solid;">
+			</div>
+			<div style="margin-bottom: 20px">
+				<div style="display: flex; margin-right: -10px;  margin-left: -10px;">
+					<div class="ribbon" style="color: #fafafa;width: 75%;background-color: #F77E03;box-shadow: 9px 6px 15px -5px black;   -moz-box-shadow: 9px 6px 15px -5px black;    -webkit-box-shadow: 9px 6px 15px -5px black;    -o-box-shadow: 9px 6px 15px -5px black;    -ms-box-shadow: 9px 6px 15px -5px black;position: relative;padding-left: 20px; font-size: 20px;">Contact</div>
+				</div>
+				<div style="margin-left: 15px; margin-right: 15px; margin-top: 15px;display: inline-grid;">
+					<div style="display: inline-flex;">
+						<img src="birthdaycache.png" style="width: 25px;height: 25px; margin-right: 5px">
+						<span style="color:#fafafa">11-06-1997</span>
+					</div>
+					<div style="display: inline-flex;">
+						<img src="Mail_iOS.svg" style="width: 25px;height: 25px; margin-right: 5px">
+						<span style="color:#fafafa">nguyenvanan11061997@gmail.com</span>
+					</div>
+					<div style="display: inline-flex;">
+						<img src="phoneicon.jpg" style="width: 25px;height: 25px; margin-right: 5px">
+						<span style="color:#fafafa">0989088613</span>
+					</div>				
+					<div style="display: inline-flex;">
+						<img src="Linkedin.svg" style="width: 25px;height: 25px; margin-right: 5px">
+						<span style="color:#fafafa">linkedin.com/in/nguyenvanan1106</span>
+					</div>					
+					<div style="display: inline-flex;">
+						<img src="location.png" style="width: 25px;height: 25px; margin-right: 5px">
+						<span style="color:#fafafa">Ha Noi</span>
+					</div>
+				</div>
+			</div>
+
+			<div style="margin-bottom: 20px">
+				<div style="display: flex; margin-right: -10px;  margin-left: -10px;">
+					<div class="ribbon" style="color: #fafafa;width: 75%;background-color: #F77E03;box-shadow: 9px 6px 15px -5px black;   -moz-box-shadow: 9px 6px 15px -5px black;    -webkit-box-shadow: 9px 6px 15px -5px black;    -o-box-shadow: 9px 6px 15px -5px black;    -ms-box-shadow: 9px 6px 15px -5px black;position: relative;padding-left: 20px; font-size: 20px;">Competences</div>
+				</div>
+				<div style="margin-left: 15px; margin-right: 15px; margin-top: 15px">
+					<div>
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="c++.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">C++</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 60%;"></div>
+								</div>
+							</div>
+						</div>					
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="java.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">JAVA</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 70%;"></div>
+								</div>
+							</div>
+						</div>					
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="php.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">PHP</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 25%;"></div>
+								</div>
+							</div>
+						</div>						
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="nodejs.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">NODEJS</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 65%;"></div>
+								</div>
+							</div>
+						</div>						
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="scala.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">SCALA</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 70%;"></div>
+								</div>
+							</div>
+						</div>					
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="react-native.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">React-native</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 15%;"></div>
+								</div>
+							</div>
+						</div>
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="html.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">HTML</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 20%;"></div>
+								</div>
+							</div>
+						</div>						
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="css.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">CSS</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 20%;"></div>
+								</div>
+							</div>
+						</div>		
+						<div style="display: flex; margin-top: 5px;">
+							<div style="border-radius: 50%; width: 45px;height: 45px;justify-content: center;align-items: center;display: grid;border-style: solid;border-color: white;border-width: 0.5px;">
+								<img src="photoshop.png" style="width: 35px;height: 35px;">
+							</div>
+							<div style="width: 60%;">
+								<span style="color: #fafafa; margin-left: 10px">PHOTOSHOP</span>
+								<div class="rangeSlider">							
+									<div class="rangeSlider__fill" style="width: 90%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="margin-top: 20px;display: flex; justify-content: space-around;">
+						<div class="round-slider" >
+							<div class="selection" style="clip-path: polygon(100% 73%, 100% 100%, 0% 100%, 0% 0%, 50% 0%, 50% 50%);"></div>
+							<div style="position: absolute; width: 5.6em; height: 5.6em;justify-content: center;align-items: center;display: flex;">
+								<div style="width: 4.1em;height: 4.1em;background-color: white;border-radius: 50%; justify-content: center;align-items: center; display: flex;">
+								<span style="font-weight:bold;font-size: 11px">EFFICACITE</span>
+							</div>
+							</div>
+						</div>
+						<div class="round-slider" >
+							<div class="selection" style="clip-path: polygon(68% 100%, 0% 100%, 0% 0%, 50% 0%, 50% 50%);"></div>
+							<div style="position: absolute; width: 5.6em; height: 5.6em;justify-content: center;align-items: center;display: flex;">
+								<div style="width: 4.1em;height: 4.1em;background-color: white;border-radius: 50%; justify-content: center;align-items: center; display: flex;">
+								<span style="font-weight:bold;font-size: 11px">AUTONOMIE</span>
+							</div>
+							</div>
+						</div>	
+						<div class="round-slider" >
+							<div class="selection" style="clip-path: polygon(97% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%, 50% 50%);"></div>
+							<div style="position: absolute; width: 5.6em; height: 5.6em;justify-content: center;align-items: center;display: flex;">
+								<div style="width: 4.1em;height: 4.1em;background-color: white;border-radius: 50%; justify-content: center;align-items: center; display: flex;">
+								<span style="font-weight:bold;font-size: 11px">CREATIVITE</span>
+							</div>
+							</div>
+						</div>						
+						<div class="round-slider" >
+							<div class="selection" style="clip-path: polygon(97% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%, 50% 50%);"></div>
+							<div style="position: absolute; width: 5.6em; height: 5.6em;justify-content: center;align-items: center;display: flex;">
+								<div style="width: 4.1em;height: 4.1em;background-color: white;border-radius: 50%; justify-content: center;align-items: center; display: flex;">
+								<span style="font-weight:bold;font-size: 11px">RESISTANCE</span>
+							</div>
+							</div>
+						</div>
+					</div>
+					
+
+				</div>
+			</div>
+			<div style="display: flex; margin-right: -10px;  margin-left: -10px;">
+					<div class="ribbon" style="color: #fafafa;width: 75%;background-color: #F77E03;box-shadow: 9px 6px 15px -5px black;   -moz-box-shadow: 9px 6px 15px -5px black;    -webkit-box-shadow: 9px 6px 15px -5px black;    -o-box-shadow: 9px 6px 15px -5px black;    -ms-box-shadow: 9px 6px 15px -5px black;position: relative;padding-left: 20px; font-size: 20px;">Interest</div>
+				</div>
+				<div style="margin-left: 15px; margin-right: 15px; margin-top: 15px">
+					<div style="display: flex;justify-content: space-between;">
+						<i class="fas fa-swimmer" style="border-radius: 50%;color:#fafafa;font-size: 28px;"></i>
+						<i class="fas fa-running" style="border-radius: 50%;color:#fafafa;font-size: 28px;"></i>
+						<i class="fas fa-book-reader" style="border-radius: 50%;color:#fafafa;font-size: 28px;"></i>
+						<i class="fas fa-headphones-alt" style="border-radius: 50%;color:#fafafa;font-size: 28px;"></i>
+						<i class="fas fa-plane" style="border-radius: 50%;color:#fafafa;font-size: 28px;"></i>
+						<i class="fas fa-gamepad" style="border-radius: 50%;color:#fafafa;font-size: 28px;"></i>
+					</div>
+				</div>
+		</div>
+		<div class="col-md-8" style="background-color:#bde8ff;padding-left: 0px; padding-right: 0px">
+			<h1 style="color:#fafafa;
+			height: 3em;
+			background-color: #6B400E;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			font-size: 3rem;
+			
+">AN NGUYEN VAN</h1>
+
+		<div style="background:  repeating-linear-gradient(to right,#F77E03 0px,#F77E03 40px, #1B422C 40px, #1B422C 80px, #C2660A 80px, #C2660A 120px,#032526 120px,#032526 160px);padding-bottom: 8px">
+			<h2 align="center" style="color: #ffff; background-color: #1B422C;margin: 0px;">SOFTWARE ENGINNER</h2>
+		</div>
+			<div style="background-color: #fbcd9f; margin:5px; border-radius: 2px">
+				<div style="display: flex;justify-content: space-between;padding-left: 0px; padding-right: 10px">
+					<div style="background-color: #1B422C;width: 200px; color: white;text-align: center;font-size: 20px">About Me</div>
+					<i class="fas fa-user" style="border-radius: 50%;color:black;font-size: 28px;"></i>
+				</div>
+			</div>
+			<div style="background-color: #fbcd9f; margin:5px; border-radius: 2px">
+				<div style="display: flex;justify-content: space-between;padding-left: 0px; padding-right: 10px">
+					<div style="background-color: #1B422C;width: 200px; color: white;text-align: center;font-size: 20px">Education</div>
+					<i class="fas fa-graduation-cap" style="border-radius: 50%;color:black;font-size: 28px;"></i>
+				</div>
+				<div>
+					<div style="display: flex;align-items: center;">
+						<div style="width: 10px;height: 10px; border-radius: 50%; background-color: #0091ea;margin: 10px;"></div>
+						<div style="font-weight: bold;"	>2015 - 2020</div>
+					</div>
+					<div style="margin-left: 25px;">
+						<div style="font-weight: bold;    color: dodgerblue;"> ACADEMY OF CRYPTOGRAPHY TECHNIQUES</div>
+						<div style="margin-left:10px;">Limited speciality: <span>Secure information system</span> </div>
+					</div>
+				</div>
+			</div>
+			<div style="background-color: #fbcd9f; margin:5px; border-radius: 2px">
+				<div style="display: flex;justify-content: space-between;padding-left: 0px; padding-right: 10px">
+					<div style="background-color: #1B422C;width: 200px; color: white;text-align: center;font-size: 20px">Experiences</div>
+					<i class="fas fa-briefcase" style="border-radius: 50%;color:black;font-size: 28px;"></i>
+				</div>
+				<div>
+					<div style="display: flex;align-items: center; margin-left: 15px">
+						<div>No Experiences</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+ <style type="text/css">
+.round-slider {
+	display: grid;
+	position: relative;
+	width: 5.6em;
+	height: 5.6em;
+	justify-self: center;
+	align-self: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.round-slider .selection {
+	width: 4.7em;
+	height: 4.7em;
+	border-radius: 50%;
+	background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+	box-shadow: 0px 0px 3px 0px #00ccf8;
+	grid-row: 1;
+	grid-column: 1;
+	justify-self: center;
+	align-self: center;
+	pointer-events: none;
+}
+.round-slider .selection:after {
+	display: block;
+	content: "";
+	width: 3px;
+	height: calc(50% - 5px);
+	background-color: red;
+	position: absolute;
+	left: calc(50% - 1px);
+	transform-origin: 1px 100%;
+	transform: rotate(0deg);
+}
+ </style>
+</div>
+</body>
+</html>
